@@ -21,10 +21,10 @@
           <a href="#Home" style = "--i:1"class="navigation-icon Active">Home</a>
           <a href="#About" style = "--i:2"class="navigation-icon">About</a>
           <a href="#Skills" style = "--i:3"class="navigation-icon">Skills</a>
-          <a href="#Project" style = "--i:4"class="navigation-icon">Project</a>
-          <!-- <a href="#Education" style = "--i:5"class="navigation-icon">Education</a> -->
+          <a href="#Experience" style = "--i:4"class="navigation-icon">Experience</a>
+          <a href="#Project" style = "--i:5"class="navigation-icon">Project</a>
         </nav>
-        
+
         <a href="#Contact" class="contact-button"> Contact Me </a>
 
           <div class="container" onclick="myFunction(this)" hamburger>
@@ -38,8 +38,8 @@
             <a href="#Home" class="nav-icon" onclick="RemoveContainer(this)">Home</a>
             <a href="#About" class="nav-icon" onclick="RemoveContainer(this)">About</a>
             <a href="#Skills" class="nav-icon" onclick="RemoveContainer(this)">Skills</a>
+            <a href="#Experience" class="nav-icon" onclick="RemoveContainer(this)">Experience</a>
             <a href="#Project" class="nav-icon" onclick="RemoveContainer(this)">Project</a>
-            <!-- <a href="#">Education</a> -->
             <a href="#Contact" class="nav-icon" onclick="RemoveContainer(this)">Contact Me</a>
           </nav>
       </header>
@@ -71,7 +71,10 @@
             </a>
           </div> -->
 
-          <div class="btn-pink" id="btn"><a href="https://github.com/Rohit-Kr-Srivastava" style="color: white;">Profile</a></div>
+          <div class="hero-btn-group">
+            <div class="btn-pink" id="btn"><a href="https://github.com/Rohit-Kr-Srivastava" style="color: white;" target="_blank">Profile</a></div>
+            <div class="btn-outline"><a href="Rohit_Kumar_Srivastava_Junior_Data_Scientist.pdf" style="color: inherit;" download>Resume</a></div>
+          </div>
         </div>
 
         <div class="section-right">
@@ -320,7 +323,54 @@
 
 
       <!-- end skill section  -->
-      
+
+      <!-- start experience section  -->
+      <section class="experience-section" id="Experience">
+
+        <div class="experience-header">
+          <h1 class="experience-text">Experience</h1>
+          <p class="experience-desc">Where I've Worked</p>
+        </div>
+
+        <div class="experience-container">
+
+          <div class="experience-card">
+
+            <div class="experience-card-top">
+              <div>
+                <h2 class="experience-role">Junior Data Scientist</h2>
+                <p class="experience-company">Kaggle Pro LLC <span class="experience-location">· Lathrop, California (Startup)</span></p>
+              </div>
+              <span class="experience-duration">Sept 2024 - Present</span>
+            </div>
+
+            <div class="experience-project">
+              <h3 class="experience-project-title">AI Job Pipeline</h3>
+              <ul class="experience-points">
+                <li>Engineered an automated job pipeline, reducing resume tailoring time from 10 minutes to under 8 seconds.</li>
+                <li>Aggregated job discovery across 5+ portals into a unified workflow, significantly increasing sourcing efficiency.</li>
+                <li>Developed an integrated ATS scoring engine, cutting manual evaluation time by 2-3 minutes per application.</li>
+                <li>Deployed on Railway, leveraging AI-assisted workflows to enhance development velocity and operational reliability.</li>
+              </ul>
+            </div>
+
+            <div class="experience-project">
+              <h3 class="experience-project-title">AI Voice Agent Chatbot</h3>
+              <ul class="experience-points">
+                <li>Built an AI voice chatbot using FastAPI, LangGraph, WebSocket, and PostgreSQL, supporting voice, RAG, and multi-model AI interactions.</li>
+                <li>Reduced AI provider dependency by 100% by replacing OpenAI services with Google Gemini and Hugging Face for LLM, STT, and TTS.</li>
+                <li>Built a PDF-based RAG pipeline using local Sentence Transformers and PostgreSQL/SQLite similarity search, reducing embedding API costs by 100%.</li>
+                <li>Added reliability and security layers including error handling, regression tests, security checks, and OpenTelemetry monitoring.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- end experience section  -->
+
       <!-- start project section  -->
       <section class="project-section" id="Project">
 
@@ -330,78 +380,55 @@
         <div class="project-container">
 
           <!-- card 1 -->
-          <!-- <div class="card">
+          <div class="card">
             <div class="card-image">
-              <img src="images/study.PNG" alt="" id="card-image">
+              <img src="images/Customer_Support_System.png" alt="Smart Customer Support Agents" id="card-image">
             </div>
 
             <div class="card-details">
-              <h1 class="card-title">Study Sync</h1>
-              <p class="card-desc">Seamless For Learming Future</p>
+              <h1 class="card-title">Smart Customer Support Agents</h1>
+              <p class="card-desc">A 7-agent AI pipeline that classifies, analyzes sentiment, summarizes, and drafts replies for support emails, automating 90% of triage with a human-approval gate before any reply is sent.</p>
             </div>
-            
+
             <div class="card-links">
-              <a href="https://github.com/md-irfan9s"><i class='fab fa-github'></i></a>
-              <a href=""><i class="fa fa-youtube-play"></i></i></a>
-            </div>  
-            
-          </div> -->
+              <a href="https://github.com/Rohit-Kr-Srivastava/smart-customer-support-agents" target="_blank"><i class='fab fa-github'></i></a>
+            </div>
+
+          </div>
+
           <!-- card 2 -->
-
-          <!-- <div class="card">
+          <div class="card">
             <div class="card-image">
-              <img src="images/weather app.PNG" alt="" id="card-image">
+              <img src="images/AI Voice Agent Chatbot Infographic.png" alt="AI Voice Agent Chatbot" id="card-image">
             </div>
 
             <div class="card-details">
-              <h1 class="card-title">Weather App</h1>
-              <p class="card-desc">A website to check weather for any county</p>
+              <h1 class="card-title">AI Voice Agent Chatbot</h1>
+              <p class="card-desc">A voice-enabled AI chatbot with document RAG and multi-provider LLM support (Gemini, Hugging Face), built on FastAPI, LangGraph, and WebSocket for real-time interaction.</p>
             </div>
-            
+
             <div class="card-links">
-              <a href="https://github.com/md-irfan9s"><i class='fab fa-github'></i></a>
-              <a href=""><i class="fa fa-youtube-play"></i></a>
-            </div>  
-            
-          </div> -->
+              <a href="https://github.com/Rohit-Kr-Srivastava/AI-Voice-Agent-Chatbot" target="_blank"><i class='fab fa-github'></i></a>
+            </div>
+
+          </div>
 
           <!-- card 3 -->
-
-          <!-- <div class="card">
+          <div class="card">
             <div class="card-image">
-              <img src="images/password-generator.PNG" alt="" id="card-image">
+              <img src="images/Jobspilot.png" alt="AI Job Pipeline" id="card-image">
             </div>
 
             <div class="card-details">
-              <h1 class="card-title">Password Generator</h1>
-              <p class="card-desc">Generate strong & secure passwords for all your online accounts with our random password generator</p>
+              <h1 class="card-title">AI Job Pipeline</h1>
+              <p class="card-desc">An automated pipeline that discovers job openings, tailors resumes, checks ATS scores, and submits applications in bulk, cutting resume tailoring time from 10 minutes to under 8 seconds.</p>
             </div>
-            
+
             <div class="card-links">
-              <a href="https://github.com/md-irfan9s"><i class='fab fa-github'></i></a>
-              <a href=""><i class="fa fa-youtube-play"></i></a>
-            </div>  
-            
-          </div> -->
-
-          <!-- card 4 -->
-
-          <!-- <div class="card">
-            <div class="card-image">
-              <img src="images/protfolio image.PNG" alt="" id="card-image">
+              <a href="https://github.com/Rohit-Kr-Srivastava/JobPipeline" target="_blank"><i class='fab fa-github'></i></a>
             </div>
 
-            <div class="card-details">
-              <h1 class="card-title">Protfolio Website</h1>
-              <p class="card-desc">Know about my journey</p>
-            </div>
-            
-            <div class="card-links">
-              <a href="https://github.com/md-irfan9s"><i class='fab fa-github'></i></a>
-              <a href=""><i class="fa fa-youtube-play"></i></a>
-            </div>  
-            
-          </div> -->
+          </div>
 
         </div>
 
@@ -495,9 +522,8 @@
 
 
             <div class="link-info">
-              <a href=""><i class="fa fa-linkedin"></i></a>
-              <a href="https://github.com/Rohit-Kr-Srivastava"><i class='fab fa-github'></i></a>
-              <a href=""><i class="fa fa-twitter"></i></a>  
+              <a href="https://www.linkedin.com/in/rohit-kumar-srivastava123/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/Rohit-Kr-Srivastava" target="_blank"><i class='fab fa-github'></i></a>
             </div>
 
           </div>
